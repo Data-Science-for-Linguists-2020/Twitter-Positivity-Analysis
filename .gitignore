@@ -1,0 +1,15 @@
+#------------------ Jupyter, R
+.ipynb_checkpoints
+.Rproj.user
+#------------------ common OS config files
+.DS_Store
+.Spotlight-V100
+Thumbs.db
+desktop.ini
+#------------------ directories to ignore
+temp/
+data/
+#------------------ saved data files
+*.csv
+*.pkl
+count_1w.txt
