@@ -27,3 +27,15 @@ Created empty repo to hold all the files.
 - The data i've found is released under CC0, so there should be no issue sharing it in its JSON form. Any data i've edited and trimmed I might only share a sample of. Any code I create that might be useful to other people can be used only with credit. 
 
 ---
+
+# 2nd Progress Report
+## 3/22/2020
+
+## Current Progress
+- I have put both my data for 2011 and 2019 into a dataframe and cleaned it up so that it only displays the text, time, and language (which I have set to be english). To do this I used the langdetect library. I also created a tokenized list for both 2011 and 2019 in order to analyze frequency distrubution and bigrams.
+- I have built a naive bayes classifier for my sentiment analysis. It could still use some work, so i'm going to continue tweaking that. I found an enormous corpus of already tagged tweets and was trying to manage the size of it. For my purposes I am only using part of it.
+
+## License 
+- I chose to go with GNU General Public License v3.0 because I wanted people to be able to use and modify my work and data, but ultimately give credit when they do. 
+- The old data I pushed has the same license as I mentioned last time, but the data I used to build the classifier is also open to use as long as Sentiment140 is listed as the source. 
+
