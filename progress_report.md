@@ -39,3 +39,17 @@ Created empty repo to hold all the files.
 - I chose to go with GNU General Public License v3.0 because I wanted people to be able to use and modify my work and data, but ultimately give credit when they do. 
 - The old data I pushed has the same license as I mentioned last time, but the data I used to build the classifier is also open to use as long as Sentiment140 is listed as the source. 
 
+---
+
+# 3rd Progress Report
+## 4/15/2020
+
+## Current Progress
+- Further cleaning of the tweets 2011 and 2019 datasets. Removed unecessary punctuation and stopwords. 
+- Used new big data techniques to work with a huge 15M line classfier. 
+- Improved performance of classifier from 50%. Used pipeline to build multinomial naive bayes with 76% accuracy. 
+- Looked into various data analysis and visualization methods such as a word cloud for positive and negative classified tweets. 
+
+## Final tweaks 
+- Add more visuals and descriptions to the data in order to contextualize it. 
+- Clean up and organize the presentation. 
