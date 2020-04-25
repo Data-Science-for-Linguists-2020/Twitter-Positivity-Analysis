@@ -1,5 +1,7 @@
 # Final Report
 
+Natasha Kamtekar | nak142 
+
 ## Table of Contents
 
   * [Summary](#summary)
@@ -10,8 +12,6 @@
   * [Analysis](#analysis)
     + [Lexical Complexity](#lexical-complexity)
     + [Sentiment](#sentiment)
-  * [Polarity values for 2011](#polarity-values-for-2011)
-  * [Polarity values for 2019](#polarity-values-for-2019)
   * [Conclusions](#conclusions)
   * [Looking back...](#looking-back)
 
