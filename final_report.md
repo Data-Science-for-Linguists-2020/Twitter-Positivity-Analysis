@@ -34,7 +34,7 @@ The first analysis I performed on my data was to get a general sense of how twee
 
 Let's start with word length. Initially, I hypothesized that tweets from today would be more verbose than tweets from 8 years ago because of more sophisticated use of the platform, and for added features like [tweet threads](https://business.twitter.com/en/blog/How-Tweet-threads.html). The data, however, completely contradicted my point.
 
-<chart here>
+![alt text](https://github.com/Data-Science-for-Linguists-2020/Twitter-Positivity-Analysis/blob/master/images/tweetlen.png?raw=true "Tweet Length Box Plot")
 
 Based on this boxplot, both the averages and the relative max and min values are in the same range for tweets from 2011 and tweets from 2019. The average tweet length was 11.37 words long in 2011, and 12.65 words long in 2019. While it is true that average tweet length has increased since 2011, it is by such a tiny amount that I feel like the difference is negligible. Futhermore, the fact that the max and min word count are also within 1 space of eachother makes it clear that this is not due to any outliers. 
 
