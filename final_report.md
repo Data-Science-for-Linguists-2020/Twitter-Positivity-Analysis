@@ -2,6 +2,19 @@
 
 ## Table of Contents
 
+  * [Summary](#summary)
+  * [Why Twitter?](#why-twitter-)
+  * [Data](#data)
+    + [Cleaning](#cleaning)
+    + [Classifier](#classifier)
+  * [Analysis](#analysis)
+    + [Lexical Complexity](#lexical-complexity)
+    + [Sentiment](#sentiment)
+  * [Polarity values for 2011](#polarity-values-for-2011)
+  * [Polarity values for 2019](#polarity-values-for-2019)
+  * [Conclusions](#conclusions)
+  * [Looking back...](#looking-back)
+
 ## Summary
 
 This project looks at Twitter data from the [internet archive](https://archive.org/search.php?query=twitterstream&sort=-publicdate) from 2011 and 2019 respectively. It compares and contrasts tweeting habits from both points in time such as content, lexical complexity, tweet length, and tweet sentiment.
@@ -18,11 +31,15 @@ Web scraping has always interested me in how much it can tell you about pop cult
 
 The data for this project comes from a sample of the 2011 and 2019 [internet archive](https://archive.org/search.php?query=twitterstream&sort=-publicdate) JSON files, where the top 1% of tweets were scraped from October of 2011 and September of 2019. The data used in the project can be found [here](https://github.com/Data-Science-for-Linguists-2020/Twitter-Positivity-Analysis/tree/master/data_samples).
 
+### Cleaning
+
 Initially, I tried to use the entirety of the dataset which proved to be too much for my computer to process. The original data was about 2.2 GB for 2019 and 0.072 GB for 2011, and was broken up into various files that stored a couple thousand lines of JSON code. Of these files, I took 8 for each year which yielded about 13,000 tweets each.
 
 However, these tweets were still in their rough form. I had a lot of trouble wrangling these datasets and figuring out what direction I should go in with my cleaning. Because I was working with tweets, which heavily featured internet lingo, I had to make sure I wasn't interfering with the integrity of the tweet with my attempts to clean it. My [initial run through](https://github.com/Data-Science-for-Linguists-2020/Twitter-Positivity-Analysis/blob/master/notebooks/data_parsing.ipynb) showed that the unedited dataframes had about 161 columns. They had a plethora of languages, emojis, and hyperlinks. From the numerous attributes of each tweet, I decided to only keep the text, the user's language, and the date the tweet had been created. Then I pickled the data for later use. 
 
 The dataframes for the tweets may have been of a more managable column size, but they also had many non-English languages to deal with. After doing some research, I felt that the [langdetect](https://pypi.org/project/langdetect/) library was a perfect way to quickly classify the tweets into their respective languages. Some of the limitations of language detection included classifying smaller snippets of text, but I decided to still use it because of the volume of data points I had. Even if langdetect made a couple of mistakes, the majority of tweets would still be viable. Additionally, I stripped the text column of its punctuation, hyperlinks, twitter specific words like "retweet", or "rt", and made the text lowercase. Initially I thought keeping the word "retweet" might be able to indicate if there was a conversation taking place, but it ended up messing with the classifier more than providing any valuable input on twitter trends.
+
+### Classifier
 
 After this, I jumped to [building my classifier](https://github.com/Data-Science-for-Linguists-2020/Twitter-Positivity-Analysis/blob/master/notebooks/classifyanalysis.ipynb). It used the open source data from [Sentiment140](http://help.sentiment140.com/for-students), a pre-existing algorithm for sentiment analysis. The classifier data can be found on the website linked above. The data that I took from Sentiment140 already marked their tweets for positive and negative sentiment. Negative sentiment got 0's while positive sentiment got 4's (I changed these labels to "pos" and "neg"). Using a pipeline with the tfidf vectorizer, I built a multinomial naive bayes classifier with an accuracy score of about 77%. I felt that this was sufficient enough to begin classifying my main dataset. 
 
@@ -94,6 +111,8 @@ And repeated again.
 
 
 Interestingly, many of these 2011 word clouds have more generic, common phrases like "i love you" or "i want to", but the 2019 word clouds have words like "1 vote" or "bbmastopsocial" or "high school college" indicating a more sophisticated and topical dialogue taking place among the 2019 tweets. They use more hastags over all-- so much so that the most frequent unigram is actually a hashtag. This indicates that users engage more with current events through tweets. 
+
+### Sentiment
 
 We can also figure out which topics are percieved positively or negatively. 
 
