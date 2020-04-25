@@ -52,16 +52,51 @@ This time, even though the averages are in the same range, the max word length f
 The highlighted portion of this dataframe shows a phenomenon common on the internet during the early 2010's. Users would typelikethisinordertoconveyafrantictone, like everything was being said in one breath. This spaceless typing is not uncommon in 2019, however it seems to be relagated to hashtags rather than full sentences. 
 
 
-Another measure used on the data was TTR. This showed whether the tweets from either era had any lexical complexity. My hypothesis was similar to the one mentioned earlier-- I thought that 2019's tweets would have a higher lower, thus a more lexically complex corpus. 
+Another measure used on the data was TTR. This showed whether the tweets from either era had any lexical complexity. My hypothesis was similar to the one mentioned earlier-- I thought that 2019's tweets would have a lower TTR, thus a more lexically complex corpus. 
 
 Here is the result of calculating TTR for unigrams:
 
 ![alt text](https://github.com/Data-Science-for-Linguists-2020/Twitter-Positivity-Analysis/blob/master/images/unigrams.png "TTR for unigrams")
 
-As I suspected, 2019's TTR was higher than 2011. Type-token ratio for 2011 was 0.20, while the ratio for 2019 was 0.23. It seems that 2019 has a slightly more diverse vocabulary. I created a word cloud in order to better demonstrate that effect:
+As I suspected, 2019's TTR was higher than 2011. Type-token ratio for 2011 was 0.20, while the ratio for 2019 was 0.23. It seems that 2019 has a slightly more diverse vocabulary. These word clouds might better demonstrate that effect:
 
 ![alt text](https://github.com/Data-Science-for-Linguists-2020/Twitter-Positivity-Analysis/blob/master/images/unigram11.png "2011 unigram cloud")
-Word Cloud for 2011
+Word Cloud for 2011 unigrams
 
 ![alt text](https://github.com/Data-Science-for-Linguists-2020/Twitter-Positivity-Analysis/blob/master/images/unigram19.png "2019 unigram cloud")
-Word Cloud for 2019
+Word Cloud for 2019 unigrams
+
+The larger the word, the more it appears in the corpus. As you can see, the cloud from 2011 unigrams has very large and prominent words, indicating that these keep repeating. The 2019 cloud has many same-sized words (and an example of the long hashtag format) indicating more lexical diversity. 
+
+We can perform this same test with bigrams and trigrams in order to see which phrases appear to pop up often.
+
+![alt text](https://github.com/Data-Science-for-Linguists-2020/Twitter-Positivity-Analysis/blob/master/images/bigram11.png "2011 unigram cloud")
+Word Cloud for 2011 bigrams
+
+![alt text](https://github.com/Data-Science-for-Linguists-2020/Twitter-Positivity-Analysis/blob/master/images/bigram19.png "2019 unigram cloud")
+Word Cloud for 2019 bigrams
+
+
+We see the same result repeated, with larger words in 2011 and same-sized words in 2019.
+
+
+![alt text](https://github.com/Data-Science-for-Linguists-2020/Twitter-Positivity-Analysis/blob/master/images/trigram11.png "2011 unigram cloud")
+Word Cloud for 2011 trigrams
+
+![alt text](https://github.com/Data-Science-for-Linguists-2020/Twitter-Positivity-Analysis/blob/master/images/trigram19.png "2019 unigram cloud")
+Word Cloud for 2019 trigrams
+
+And repeated again. 
+
+
+Interestingly, many of these 2011 word clouds have more generic, common phrases like "i love you" or "i want to", but the 2019 word clouds have words like "1 vote" or "bbmastopsocial" or "high school college" indicating a more sophisticated and topical dialogue taking place among the 2019 tweets. They use more hastags over all-- so much so that the most frequent unigram is actually a hashtag. This indicates that users engage more with current events through tweets. 
+
+We can also figure out which topics are percieved positively or negatively. 
+
+First, lets look at some stats on the entirety of the corpus: This is how the classified tweets stacked up. 
+
+In 2011:
+![alt text](https://github.com/Data-Science-for-Linguists-2020/Twitter-Positivity-Analysis/blob/master/images/pie11.png "2011 pie chart")
+
+In 2019:
+![alt text](https://github.com/Data-Science-for-Linguists-2020/Twitter-Positivity-Analysis/blob/master/images/pie19.png "2019 pie chart")
