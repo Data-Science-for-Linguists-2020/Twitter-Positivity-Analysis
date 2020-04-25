@@ -31,5 +31,5 @@ The main data used in this project came from a sample of the 2011 and 2019 [inte
 		- [data_parsing](https://github.com/Data-Science-for-Linguists-2020/Twitter-Positivity-Analysis/blob/master/notebooks/data_parsing.ipynb): strips the tweet data to necessary columns
 		- [data_analysis](https://github.com/Data-Science-for-Linguists-2020/Twitter-Positivity-Analysis/blob/master/notebooks/data_analysis.ipynb) and [classifyanalysis](): different stages of the analysis process
 		- [finalnb](https://github.com/Data-Science-for-Linguists-2020/Twitter-Positivity-Analysis/blob/master/notebooks/finalnb.ipynb): the final jupyter notebook
-	-[Images](https://github.com/Data-Science-for-Linguists-2020/Twitter-Positivity-Analysis/blob/master/images):
+	- [Images](https://github.com/Data-Science-for-Linguists-2020/Twitter-Positivity-Analysis/blob/master/images):
 		- Contains images of all plots
