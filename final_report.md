@@ -38,7 +38,30 @@ Let's start with word length. Initially, I hypothesized that tweets from today w
 
 Based on this boxplot, both the averages and the relative max and min values are in the same range for tweets from 2011 and tweets from 2019. The average tweet length was 11.37 words long in 2011, and 12.65 words long in 2019. While it is true that average tweet length has increased since 2011, it is by such a tiny amount that I feel like the difference is negligible. Futhermore, the fact that the max and min word count are also within 1 space of eachother makes it clear that this is not due to any outliers. 
 
+This result does make sense to some degree. Since twitter has a character count users are probably confined to those limitations, making the average word count more or less consistent. 
+
+The average word length tells a slightly different story though.
+
+![alt text](https://github.com/Data-Science-for-Linguists-2020/Twitter-Positivity-Analysis/blob/master/images/wordlen.png "Word Length Box Plot")
+
+This time, even though the averages are in the same range, the max word length for 2011 is a whopping 35 characters long. Why is that? Surely users 8 years ago weren't sprinking lengthy vocab into their already limited tweeting space? Taking a look at some examples of lengthy tweets we can see exactly why this result occured. 
 
 
+![alt text](https://github.com/Data-Science-for-Linguists-2020/Twitter-Positivity-Analysis/blob/master/images/longword.PNG?raw=true "Long Text")
+
+The highlighted portion of this dataframe shows a phenomenon common on the internet during the early 2010's. Users would typelikethisinordertoconveyafrantictone, like everything was being said in one breath. This spaceless typing is not uncommon in 2019, however it seems to be relagated to hashtags rather than full sentences. 
 
 
+Another measure used on the data was TTR. This showed whether the tweets from either era had any lexical complexity. My hypothesis was similar to the one mentioned earlier-- I thought that 2019's tweets would have a higher lower, thus a more lexically complex corpus. 
+
+Here is the result of calculating TTR for unigrams:
+
+![alt text](https://github.com/Data-Science-for-Linguists-2020/Twitter-Positivity-Analysis/blob/master/images/unigrams.png "TTR for unigrams")
+
+As I suspected, 2019's TTR was higher than 2011. Type-token ratio for 2011 was 0.20, while the ratio for 2019 was 0.23. It seems that 2019 has a slightly more diverse vocabulary. I created a word cloud in order to better demonstrate that effect:
+
+![alt text](https://github.com/Data-Science-for-Linguists-2020/Twitter-Positivity-Analysis/blob/master/images/unigram11.png "2011 unigram cloud")
+Word Cloud for 2011
+
+![alt text](https://github.com/Data-Science-for-Linguists-2020/Twitter-Positivity-Analysis/blob/master/images/unigram19.png "2019 unigram cloud")
+Word Cloud for 2019
