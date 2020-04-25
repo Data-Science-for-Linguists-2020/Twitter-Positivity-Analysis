@@ -96,7 +96,17 @@ We can also figure out which topics are percieved positively or negatively.
 First, lets look at some stats on the entirety of the corpus: This is how the classified tweets stacked up. 
 
 In 2011:
+Polarity values for 2011
+neg    2861
+pos    2482
+
 ![alt text](https://github.com/Data-Science-for-Linguists-2020/Twitter-Positivity-Analysis/blob/master/images/pie11.png "2011 pie chart")
 
 In 2019:
-![alt text](https://github.com/Data-Science-for-Linguists-2020/Twitter-Positivity-Analysis/blob/master/images/pie19.png "2019 pie chart")
+Polarity values for 2019
+neg    2632
+pos    2300
+
+![alt text](https://github.com/Data-Science-for-Linguists-2020/Twitter-Positivity-Analysis/blob/master/images/pi19.png "2019 pie chart")
+
+
