@@ -95,18 +95,49 @@ We can also figure out which topics are percieved positively or negatively.
 
 First, lets look at some stats on the entirety of the corpus: This is how the classified tweets stacked up. 
 
-In 2011:
 Polarity values for 2011
-neg    2861
-pos    2482
+
+neg  |  2861
+--- | ---
+pos  |  2482
 
 ![alt text](https://github.com/Data-Science-for-Linguists-2020/Twitter-Positivity-Analysis/blob/master/images/pie11.png "2011 pie chart")
 
-In 2019:
 Polarity values for 2019
-neg    2632
-pos    2300
+
+neg  |  2632
+--- | ---
+pos  |  2300
 
 ![alt text](https://github.com/Data-Science-for-Linguists-2020/Twitter-Positivity-Analysis/blob/master/images/pi19.png "2019 pie chart")
 
+A pretty even split for both of the dataframes! Negative tweets beat the positive ones by just a hair. Let's see why?
+
+I used trigrams and divided them by negative and positive sentiment. These clouds will how three word phrases present in each category of tweet. 
+
+2011:
+
+![alt text](https://github.com/Data-Science-for-Linguists-2020/Twitter-Positivity-Analysis/blob/master/images/pos11tri.png "2011 pie chart")
+
+2019:
+
+![alt text](https://github.com/Data-Science-for-Linguists-2020/Twitter-Positivity-Analysis/blob/master/images/pos19tri.png "2011 pie chart")
+
+The 2019 cloud seems to be nothing but the "reply 1 vote" trigram and variations of. Very focused on the current event and hashtag of the moment. The 2011 cloud looks more littered with positivity, the strongest phrase being "I love you". The word love actually does appear a lot more often overall.
+
+
+The negative word clouds don't really have anything striking about them:
+
+
+2011:
+
+![alt text](https://github.com/Data-Science-for-Linguists-2020/Twitter-Positivity-Analysis/blob/master/images/neg11tri.png "2011 pie chart")
+
+2019:
+
+![alt text](https://github.com/Data-Science-for-Linguists-2020/Twitter-Positivity-Analysis/blob/master/images/neg19tri.png "2011 pie chart")
+
+The words that appear are considerably smaller than the giant "i love you" from the positive cloud. In the 2011 cloud, "you're single focus on being a better you" was a popular hashtag or topic of conversation that repeated itself through many tweets. This sentiment seems to be slightly positive, but implies that the starting point for the reader is not a "better" version of themselves, so there might be additional negative dialogue in the body of the tweets. It seems like there isn't much substance to the negative tweets from 2011. This implies that tweets from 2011 were more concrete in their positivity, repeating certain words and phrases, where as the negative tweets were not unified in any way. In the 2019 cloud, all of the words being roughly the same size shows that there was no common topic of negativity among the tweets. The phrases range from comments on followers, to conversations about school, to opinions air travel. There are a few automated messages sprinkled in there as well.
+
+Like the 2011 cloud, the words are small in the 2019 cloud, however, their uniformity could suggest that there were more negative tweets in general that year, where as the 2011 tweets had a certain topic that was slightly bigger than the others.  Overall, the negative tweets are not as unified as the positive ones. 
 
