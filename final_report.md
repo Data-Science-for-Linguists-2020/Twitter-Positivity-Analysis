@@ -6,6 +6,8 @@
 
 This project looks at Twitter data from the [internet archive](https://archive.org/search.php?query=twitterstream&sort=-publicdate) from 2011 and 2019 respectively. It compares and contrasts tweeting habits from both points in time such as content, lexical complexity, tweet length, and tweet sentiment.
 
+My hypothesis is that tweets from 2019 have gotten more streamlined in topic and more lexically complex. I also believe that they have a more negative overall sentiment as a result of the focus on current events. 
+
 ## Why Twitter?
 
 Web scraping has always interested me in how much it can tell you about pop culture and human behavior in general. We put so much of ourselves in online spaces, so I wanted to see how online culture, specifically twitter culture, has changed as time has gone on. People often say that social media is a plague, but I have seen a lot of productive discussions to contrast against any percieved negativity as people realize the potential of being this globally connected. I wanted to test the hypothesis that social media has made us less coherrent or willing to start important diaologue. I also wanted to look at the sentiment behind the dialogue and compare it over approximately 8 years. For me personally, 2011 was around the time when I was first expressing myself on the internet, so it is interesting to see how nostalgia colors our view of the past.
@@ -141,3 +143,14 @@ The words that appear are considerably smaller than the giant "i love you" from 
 
 Like the 2011 cloud, the words are small in the 2019 cloud, however, their uniformity could suggest that there were more negative tweets in general that year, where as the 2011 tweets had a certain topic that was slightly bigger than the others.  Overall, the negative tweets are not as unified as the positive ones. 
 
+## Conclusions
+
+The results somewhat supported my hypothesis. I thought that the tweets from 2019 would lean more towards current events and be more sophisticated. I also hypothesized that they would yield a negative sentiment overall. It seems the data showed signs of users engaging more with current events and hashtags. Some common phrases engaged with the BBMA awards, the billboard music awards, mentions of voting, and mentions of high school and college, which all point to a more topic driven discourse. The tweets from 2011 however, exude more "positivity" in the sense that they have a stronger inclination to use positively correlated words and phrases like "i love you", "check it out", "i want to", etc. The positive word cloud for 2019 has "vote 1 reply" as the most prominent positively tagged phrase, which isn't actually a phrase that we would associate with being overly positive. The hypothesis was disproven, however, in the assumption that the tweets of 2019 would be more "sophisticated". The average word length and average tweet length was practically the same for both years, with the only major difference being a result of the typing styles of the time. The type-token ratio to show lexical diversity also only had marginal results, with a difference of only 0.03. Both years were evenly lexically diverse. 
+
+## Looking back...
+
+This project was definitely intimidating for me due to the unwieldy size and makeup of the data. However, if I could do it over again I would try to pick tweets that were more focused on a specific topic rather than a mixed bag. I would also have liked to pay more attention to internet lingo while cleaning the data, but since I was just learning how to scrape tweets, I felt like that was something to tackle for the next round. 
+
+The biggest struggle was in finding data and then cleaning data. I had to make sure my tokens would be recognizable enough to the classifier so that certain abbreviations that were made due to the medium being online and the character limit requiring some creative spellings wouldn't be overlooked. 
+
+I would also love to get into analysis earlier than I did so that I could really dig much deeper than I was able to here.
